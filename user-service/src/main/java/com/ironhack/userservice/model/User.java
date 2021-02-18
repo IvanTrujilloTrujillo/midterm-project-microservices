@@ -1,4 +1,4 @@
-package com.ironhack.bankingsystem.model;
+package com.ironhack.userservice.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -21,7 +21,6 @@ public class User {
     private String password;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JsonIgnore
     private Set<Role> roles;
 
     //Constructors

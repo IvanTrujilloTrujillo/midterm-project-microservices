@@ -1,4 +1,4 @@
-package com.ironhack.bankingsystem.controller.interfaces;
+package com.ironhack.userservice.controller.interfaces;
 
 public interface IAccountHolderController {
 }

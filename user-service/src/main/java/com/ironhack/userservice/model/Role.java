@@ -1,4 +1,4 @@
-package com.ironhack.bankingsystem.model;
+package com.ironhack.userservice.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;

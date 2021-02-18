@@ -1,9 +1,9 @@
-package com.ironhack.bankingsystem.controller.impl;
+package com.ironhack.userservice.controller.impl;
 
-import com.ironhack.bankingsystem.controller.interfaces.IThirdPartyController;
-import com.ironhack.bankingsystem.model.ThirdParty;
-import com.ironhack.bankingsystem.repository.ThirdPartyRepository;
-import com.ironhack.bankingsystem.service.impl.ThirdPartyService;
+import com.ironhack.userservice.controller.interfaces.IThirdPartyController;
+import com.ironhack.userservice.model.ThirdParty;
+import com.ironhack.userservice.repository.ThirdPartyRepository;
+import com.ironhack.userservice.service.impl.ThirdPartyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;

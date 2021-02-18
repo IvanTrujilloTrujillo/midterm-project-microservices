@@ -1,11 +1,11 @@
-package com.ironhack.bankingsystem.service.impl;
+package com.ironhack.userservice.service.impl;
 
-import com.ironhack.bankingsystem.model.AccountHolder;
-import com.ironhack.bankingsystem.model.Role;
-import com.ironhack.bankingsystem.repository.AccountHolderRepository;
-import com.ironhack.bankingsystem.repository.RoleRepository;
-import com.ironhack.bankingsystem.repository.UserRepository;
-import com.ironhack.bankingsystem.service.interfaces.IAccountHolderService;
+import com.ironhack.userservice.model.AccountHolder;
+import com.ironhack.userservice.model.Role;
+import com.ironhack.userservice.repository.AccountHolderRepository;
+import com.ironhack.userservice.repository.RoleRepository;
+import com.ironhack.userservice.repository.UserRepository;
+import com.ironhack.userservice.service.interfaces.IAccountHolderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

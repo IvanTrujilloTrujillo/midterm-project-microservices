@@ -1,6 +1,6 @@
-package com.ironhack.bankingsystem.controller.interfaces;
+package com.ironhack.userservice.controller.interfaces;
 
-import com.ironhack.bankingsystem.model.ThirdParty;
+import com.ironhack.userservice.model.ThirdParty;
 
 public interface IThirdPartyController {
     ThirdParty createThirdParty(ThirdParty thirdParty);

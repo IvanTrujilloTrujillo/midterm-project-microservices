@@ -1,9 +1,9 @@
-package com.ironhack.bankingsystem.controller.impl;
+package com.ironhack.userservice.controller.impl;
 
-import com.ironhack.bankingsystem.controller.interfaces.IAccountHolderController;
-import com.ironhack.bankingsystem.model.AccountHolder;
-import com.ironhack.bankingsystem.repository.AccountHolderRepository;
-import com.ironhack.bankingsystem.service.impl.AccountHolderService;
+import com.ironhack.userservice.controller.interfaces.IAccountHolderController;
+import com.ironhack.userservice.model.AccountHolder;
+import com.ironhack.userservice.repository.AccountHolderRepository;
+import com.ironhack.userservice.service.impl.AccountHolderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;

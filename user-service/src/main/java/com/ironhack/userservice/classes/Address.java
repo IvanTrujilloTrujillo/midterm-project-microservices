@@ -1,4 +1,4 @@
-package com.ironhack.bankingsystem.classes;
+package com.ironhack.userservice.classes;
 
 import javax.persistence.Embeddable;
 import javax.validation.constraints.NotEmpty;

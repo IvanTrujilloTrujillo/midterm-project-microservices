@@ -1,6 +1,6 @@
-package com.ironhack.bankingsystem.repository;
+package com.ironhack.userservice.repository;
 
-import com.ironhack.bankingsystem.model.User;
+import com.ironhack.userservice.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

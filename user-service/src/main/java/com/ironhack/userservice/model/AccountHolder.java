@@ -1,6 +1,6 @@
-package com.ironhack.bankingsystem.model;
+package com.ironhack.userservice.model;
 
-import com.ironhack.bankingsystem.classes.Address;
+import com.ironhack.userservice.classes.Address;
 
 import javax.persistence.*;
 import javax.validation.Valid;

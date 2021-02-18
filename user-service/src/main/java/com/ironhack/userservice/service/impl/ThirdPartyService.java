@@ -1,17 +1,19 @@
-package com.ironhack.bankingsystem.service.impl;
+package com.ironhack.userservice.service.impl;
 
-import com.ironhack.bankingsystem.model.Role;
-import com.ironhack.bankingsystem.model.ThirdParty;
-import com.ironhack.bankingsystem.repository.RoleRepository;
-import com.ironhack.bankingsystem.repository.ThirdPartyRepository;
-import com.ironhack.bankingsystem.repository.UserRepository;
-import com.ironhack.bankingsystem.service.interfaces.IThirdPartyService;
+import com.ironhack.userservice.model.Role;
+import com.ironhack.userservice.model.ThirdParty;
+import com.ironhack.userservice.repository.RoleRepository;
+import com.ironhack.userservice.repository.ThirdPartyRepository;
+import com.ironhack.userservice.repository.UserRepository;
+import com.ironhack.userservice.service.interfaces.IThirdPartyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+
+import java.util.Set;
 
 @Service
 public class ThirdPartyService implements IThirdPartyService {
@@ -38,6 +40,7 @@ public class ThirdPartyService implements IThirdPartyService {
             thirdParty.setPassword(passwordEncoder.encode(thirdParty.getPassword()));
 
             //Save the third party and add the role
+            thirdParty.setRoles(Set.of(new Role("THIRD_PARTY", thirdParty)));
             thirdPartyRepository.save(thirdParty);
             roleRepository.save(new Role("THIRD_PARTY", thirdParty));
             return thirdParty;
